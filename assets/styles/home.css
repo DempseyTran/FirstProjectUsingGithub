@@ -1,3 +1,4 @@
+
 /* BASIC CSS */
 * {
     margin: 0;
@@ -45,27 +46,37 @@ header {
     padding: 10px 20px;
     background-color: #f4f4f4; 
 }
-
 /* Căn chỉnh logo */
 .company-logo-container {
-    background-color: blanchedalmond;
-    flex: 1; /* Chiếm không gian tối đa nếu cần */
-    background-image: url('../../logo.svg'); /* Đặt logo nếu có */
-    background-size: contain;
+    flex: 0.3; 
+    /* background-color: blanchedalmond; */
+    background-image: url('../../logo.svg');
+    background-position: 30px 5px;
+    background-size: 190px;
     background-repeat: no-repeat;
-    height: 40px; /* Điều chỉnh kích thước logo */
+    height: 70px; 
     width: 200px;
 }
-
-/* Đặt menu thành flex */
+.menu-container {
+    flex: 1; /* Chiếm không gian tối đa nếu cần */
+}
 .menu-container ul {
-    background-color: black;
+    height: 50px;
+    gap: 50px;
+    /* background-color: black; */
     display: flex;
+    justify-content: center;
     list-style-type: none;
 }
 
 .menu-container ul li {
-    margin-right: 20px; /* Khoảng cách giữa các mục menu */
+    height: 20px;
+    /* background-color: #fff; */
+    font-size: 18px;
+    font-weight: 500;
+    align-items: center;
+    position: relative;
+    top: 17px;
 }
 
 .menu-container ul li a {
@@ -73,23 +84,188 @@ header {
     color: #333;
 }
 
+/* Tạo gạch dưới khi hover */
+.menu-container ul li::after {
+    content: '';
+    position: absolute;
+    top: 35px;
+    left: 0;
+    bottom: 0;
+    width: 0%; 
+    height: 2px;
+    background-color: black; 
+    transition: width 0.3s ease; 
+}
+.menu-container ul li:hover::after {
+    width: 100%; /* Mở rộng hết chiều rộng của mục menu */
+}
+
+
 /* Căn chỉnh icon */
 .icon-container {
-    background-color: blue;
+    flex: 0.3;
 }
 .icon-container ul {
     display: flex;
+    justify-content: center;
     list-style-type: none;
+    gap: 30px;
 }
-
 .icon-container ul li {
-    margin-left: 15px; /* Khoảng cách giữa các icon */
+    position: relative;
+    top: 13px;
+    left: 20px;
+    /* background-color: #fff; */
+    height: 35px ;
+    width: 35px;
+}
+.icon-container ul li iconify-icon {
+    position: relative;
+    top: 3px;
+    left: 2px;
+    font-size: 30px; /* Điều chỉnh kích thước icon */
 }
 
 .change-language {
-    height: 16px;
-    width: 16px;
-    border-radius: 8px;
+    border-radius: 30px;
+    background-image: url(../../vietnamese.svg);
 }
 
+/* Phần Main */
+/* Nhớ import font montserrat vào main */
 
+/* Section 1 */
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slides img {
+    position: relative;
+    /* top: -295px; */
+    width: 100%;
+    height: 880px;
+    object-fit: cover;
+}
+
+/* Section 2 - Welcome to show room*/
+.room-show-container {
+    height: 700px;
+    /* background-color: blue; */
+    align-items: center;
+}
+.room-show-container__title {
+    width: inherit;
+    height: 50px;
+    padding-top: 40px;
+    padding-bottom: 70px;
+    /* background-color: blueviolet; */
+    text-align: center;
+}
+.room-show-container__room-box {
+    margin: 0 auto;
+    width: 1220px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #fff; */
+    height: 73%;
+}
+.room-show-container__room-box img {
+    height: 470px;
+    width: 290px;
+}
+
+/* Section - Introduction */
+.introduction-container {
+    height: 700px;
+    /* background-color: pink; */
+    align-items: center;    
+}
+.introduction-container__tittle {
+    align-items: center;
+    /* background-color: #fff; */
+    display: flex;
+    justify-content: center;
+}
+.introduction-container__tittle h2 {
+    position: relative;
+    top: 8px;
+    left: -5px;
+    font-family: Montserrat, sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+}
+.introduction-container__tittle img {
+    height: 50%;
+}
+.introduction-container__text-space {
+    height: 300px;
+    width: 100%;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.introduction-container__text-space__text-wrapper {
+    height: 80%;
+    width: 800px;
+    /* background-color: #fff; */
+    align-items: center;
+}
+.introduction-container__text-space__text-wrapper p {
+    padding-top: 30px;
+    font-size: 16px;
+    font-style: normal;
+}
+.introduction-container__cover-pic {
+    width: 800px;
+    height: 350px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+/* Section - European */
+.European-container {
+    height: 800px;
+    /* background-color: violet; */
+    align-items: center; 
+}
+.European-container__title {
+    height: 140px;
+    /* background-color: #fff; */
+    text-align: center;
+    align-items: center;    
+}
+.European-container__title h2 {
+    padding-top: 75px;
+}
+.European-container__text-space {
+    height: 290px;
+    width: 100%;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.European-container__text-space__text-wrapper {
+    height: 80%;
+    width: 800px;
+    /* background-color: #fff; */
+    align-items: center;
+}
+.European-container__text-space__text-wrapper p {
+    font-size: 16px;
+    font-style: normal;
+}
+.European-container__cover-pic {
+    width: 800px;
+    height: 370px;
+    background-color: #fff;
+    margin: 0 auto;
+}
