@@ -1,0 +1,95 @@
+/* BASIC CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: poppins, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+p {
+    margin-bottom: 1.5rem;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    margin-bottom: 0.5rem;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* DETAILED */
+/* Header - Thanh điều hướng*/
+/* Đặt header thành flex container */
+header {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 20px;
+    background-color: #f4f4f4; 
+}
+
+/* Căn chỉnh logo */
+.company-logo-container {
+    background-color: blanchedalmond;
+    flex: 1; /* Chiếm không gian tối đa nếu cần */
+    background-image: url('../../logo.svg'); /* Đặt logo nếu có */
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 40px; /* Điều chỉnh kích thước logo */
+    width: 200px;
+}
+
+/* Đặt menu thành flex */
+.menu-container ul {
+    background-color: black;
+    display: flex;
+    list-style-type: none;
+}
+
+.menu-container ul li {
+    margin-right: 20px; /* Khoảng cách giữa các mục menu */
+}
+
+.menu-container ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Căn chỉnh icon */
+.icon-container {
+    background-color: blue;
+}
+.icon-container ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.icon-container ul li {
+    margin-left: 15px; /* Khoảng cách giữa các icon */
+}
+
+.change-language {
+    height: 16px;
+    width: 16px;
+    border-radius: 8px;
+}
+
+
