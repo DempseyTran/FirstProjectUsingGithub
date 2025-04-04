@@ -5,10 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <!-- Nhớ import font montserrat lúc có mạng, rồi import font cho section introduction -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles/home.css">
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js"></script>
 </head>
@@ -67,12 +63,20 @@
                 <h2>Welcome to <strong>AConcept</strong></h2>
             </div>
             <div class="room-show-container__room-box">
-                <img src="assets/imgs/HomePage/1-2-500x750-500x750-500x750-500x750-500x750-500x750-500x750-500x750-500x750.jpg"
-                    alt="living">
-                <img src="assets/imgs/HomePage/3-3-500x750-500x750-500x750-500x750-500x750.jpg" alt="dining">
-                <img src="assets/imgs/HomePage/4-3-500x750-500x750-500x750-500x750-500x750-500x750.jpg" alt="bedroom">
-                <img src="assets/imgs/HomePage/banner-sp-trang-tri-1-500x750-500x750-500x750-500x750-500x750-500x750.jpg"
-                    alt="accessories">
+                <div class="room-box__card" style="--i:1;" data-text="Living">
+                    <img src="assets/imgs/HomePage/1-2-500x750-500x750-500x750-500x750-500x750-500x750-500x750-500x750-500x750.jpg"
+                        alt="living">  
+                </div>
+                <div class="room-box__card" style="--i:2;" data-text="Dining">
+                    <img src="assets/imgs/HomePage/3-3-500x750-500x750-500x750-500x750-500x750.jpg" alt="dining">
+                </div>
+                <div     class="room-box__card" style="--i:3;" data-text="Bedroom">
+                    <img src="assets/imgs/HomePage/4-3-500x750-500x750-500x750-500x750-500x750-500x750.jpg" alt="bedroom">
+                </div>
+                <div class="room-box__card" style="--i:4;" data-text="Accessories">           
+                    <img src="assets/imgs/HomePage/banner-sp-trang-tri-1-500x750-500x750-500x750-500x750-500x750-500x750.jpg"
+                        alt="accessories">
+                </div>
             </div>
         </section>
         <section class="introduction-container">
@@ -91,8 +95,17 @@
                         multi-dimensionality in emotions that they bring to the space.</p>
                 </div>
             </div>
-            <div class="introduction-container__cover-pic">
-                đây là phần sáng tạo
+            <div class="cover-pic-container">
+                <div class="cover-pic-container__card" style="--i:-2;" data-text="Stylish"><img
+                        src="assets/imgs/HomePage/img1.jpg" alt=""></div>
+                <div class="cover-pic-container__card" style="--i:-1;" data-text="Comfortable"><img
+                        src="assets/imgs/HomePage/img2.jpg" alt=""></div>
+                <div class="cover-pic-container__card" style="--i:0;" data-text="Durable"><img
+                        src="assets/imgs/HomePage/img3.jpg" alt=""></div>
+                <div class="cover-pic-container__card" style="--i:1;" data-text="Elegant"><img
+                        src="assets/imgs/HomePage/img4.jpg" alt=""></div>
+                <div class="cover-pic-container__card" style="--i:2;" data-text="Versatile"><img
+                        src="assets/imgs/HomePage/img5.jpg" alt=""></div>
             </div>
         </section>
         <section class="European-container">
@@ -102,49 +115,67 @@
             <div class="European-container__text-space">
                 <div class="European-container__text-space__text-wrapper">
                     <p>
-                        Denmark is marked in all fields from art, architecture, science and technology, history to social
+                        <a href="https://en.wikipedia.org/wiki/Denmark"><strong> <i>Denmark</i></strong></a> is marked in all fields from art, architecture, science and technology, history to
+                        social
                         welfare. Those achievements have created a solid foundation to ensure a peaceful pace of life,
                         appreciate true values ​​and always be creative to bring good things to life. More specifically,
                         this spiritual element is always clearly reflected in every living corner and every home of the
-                        people here. Denmark is marked in all fields from art, architecture, science and technology, history
-                        to social welfare. Those achievements have created a solid foundation to ensure a peaceful pace of
+                        people here. Denmark is marked in all fields from art, architecture, science and technology,
+                        history
+                        to social welfare. Those achievements have created a solid foundation to ensure a peaceful pace
+                        of
                         life, appreciate true values ​​and always be creative to bring good things to life. More
-                        specifically, this spiritual element is always clearly reflected in every living corner and every
+                        specifically, this spiritual element is always clearly reflected in every living corner and
+                        every
                         home of the people here.
                     </p>
                 </div>
             </div>
-            <div class="European-container__cover-pic">
-                đây là phần ném css pro
+            <div class="European-container__box">
+                <div class="box-container">
+                    <span style="--i:1;"><img src="assets/imgs/HomePage/eu1.jpg" alt=""></span>
+                    <span style="--i:2;"><img src="assets/imgs/HomePage/eu2.jpg" alt=""></span>
+                    <span style="--i:3;"><img src="assets/imgs/HomePage/eu3.jpg" alt=""></span>
+                    <span style="--i:4;"><img src="assets/imgs/HomePage/eu4.jpg" alt=""></span>
+                    <span style="--i:5;"><img src="assets/imgs/HomePage/eu5.jpg" alt=""></span>
+                    <span style="--i:6;"><img src="assets/imgs/HomePage/eu6.jpg" alt=""></span>
+                    <span style="--i:7;"><img src="assets/imgs/HomePage/eu7.jpg" alt=""></span>
+                    <span style="--i:8;"><img src="assets/imgs/HomePage/eu8.jpg" alt=""></span>
+                </div>
             </div>
+            <script src="assets/src/Homepage_Section3DRotaition.js"></script>
         </section>
     </main>
-
     <footer class="footer">
         <section class="footer-content">
             <div class="social">
                 <ul>
                     <li>
                         <a class="youtube" href="https://www.youtube.com/@minhhieutran7590" target="_blank"
-                            rel="nofollow noreferrer" aria-label="youtube">youtube</a>
+                            rel="nofollow noreferrer" aria-label="youtube">
+                            <iconify-icon icon="logos:youtube-icon"></iconify-icon>
+                        </a>
                     </li>
                     <li>
                         <a class="facebook" href="https://www.facebook.com/profile.php?id=100011450641922"
-                            target="_blank" rel="nofollow noreferrer" aria-label="facebook">facebook</a>
+                            target="_blank" rel="nofollow noreferrer" aria-label="facebook">
+                            <iconify-icon icon="logos:facebook"></iconify-icon>
+                        </a>
                     </li>
                     <li>
                         <a class="linkedin" href="https://www.linkedin.com/in/tran-dempsey-a831a5287/" target="_blank"
-                            rel="nofollow noreferrer" aria-label="instagram">instagram</a>
+                            rel="nofollow noreferrer" aria-label="instagram">
+                            <iconify-icon icon="skill-icons:instagram"></iconify-icon>
+                        </a>
                     </li>
                 </ul>
             </div>
             <div class="copyright">
-                <p>
-                    2024 © <strong>HKT Furniture</strong>
-                </p>
+                <p>2024 © <strong>HKT Furniture</strong></p>
             </div>
         </section>
     </footer>
     <script src="assets/src/Homepage_Section1_Slides.js"></script>
 </body>
+
 </html>
